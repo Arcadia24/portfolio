@@ -15,8 +15,8 @@
       <a href="#home" @click.prevent="scrollToSection('home')" :class="{ 'active': activeSection === 'home' }">home</a>
       <a href="#about" @click.prevent="scrollToSection('about')" :class="{ 'active': activeSection === 'about' }">about</a>
       <a href="#education" @click.prevent="scrollToSection('education')" :class="{ 'active': activeSection === 'education' }">education</a>
-      <a href="#skills" @click.prevent="scrollToSection('skills')" :class="{ 'active': activeSection === 'skills' }">skills</a>
       <a href="#projects" @click.prevent="scrollToSection('projects')" :class="{ 'active': activeSection === 'projects' }">projects</a>
+      <a href="#skills" @click.prevent="scrollToSection('skills')" :class="{ 'active': activeSection === 'skills' }">skills</a>
       <!-- <a href="#contact" @click.prevent="scrollToSection('contact')" :class="{ 'active': activeSection === 'contact' }">contact</a> -->
 
       <span class="active-navbar"></span>
@@ -37,9 +37,9 @@
       <span class="animate" style="--i:4;"></span>
       </p>
       <div class="btn-box">
-        <a href="#" class="btn">Hire Me</a>
+        <!-- <a href="#" class="btn">Hire Me</a>
         <a href="#contact" class="btn">Let's Talk</a>
-        <span class="animate" style="--i:5;"></span>
+        <span class="animate" style="--i:5;"></span> -->
       </div>
     </div>
 
@@ -89,10 +89,8 @@
           <div class="education-content">
             <div class="content">
               <div class="year"><i class="bx bxs-calendar"></i> 2022 - 2024</div>
-              <h3>MS Creative Technology at De Vinci Innovation Center</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Esse optio vel sit doloremque officia fuga omnis vitae a et nulla voluptatem, 
-                ipsam cupiditate soluta sint voluptatibus aliquam adipisci odit porro!</p>
+              <h3>MS Creative Technology at Institute for Future Techonologies</h3>
+              <p>I pursued a Master of Science in Creative Technology at the De Vinci Innovation Center, focusing on the intersection of technology, innovation, and design.</p>
             </div>
           </div>
 
@@ -100,9 +98,7 @@
             <div class="content">
               <div class="year"><i class="bx bxs-calendar"></i> 2021 - 2024</div>
               <h3>Master’s in Engineering at Leonard De Vinci Engineer School</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Esse optio vel sit doloremque officia fuga omnis vitae a et nulla voluptatem, 
-                ipsam cupiditate soluta sint voluptatibus aliquam adipisci odit porro!</p>
+              <p>I completed a Master's degree in Data Science at École Supérieure d'Ingénieurs Léonard de Vinci (ESILV) where I honed my skills in analytics, machine learning, and big data technologies.</p>
             </div>
           </div>
 
@@ -110,9 +106,7 @@
             <div class="content">
               <div class="year"><i class="bx bxs-calendar"></i> 2020 - 2021</div>
               <h3>Post-graduate Preparatory Class at Saint-Cyr L’ ́ecole Militar High School</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Esse optio vel sit doloremque officia fuga omnis vitae a et nulla voluptatem, 
-                ipsam cupiditate soluta sint voluptatibus aliquam adipisci odit porro!</p>
+              <p>Two years of rigorous coursework in preparation for the engineering school entrance exam in France.</p>
             </div>
           </div>
           <span class="animate scroll" style="--i:3;"></span>
@@ -155,6 +149,57 @@
     </div>
   </section>
 
+  <section class="projects" id="projects" :class="{ 'show-animate': activeSection === 'projects' }" ref="sections">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="project-row">
+      <div class="project-card">
+        <a href="https://dvic.devinci.fr/projects/cui-cui" target="_blank">
+        <img src="./assets/cuicuilogo.jpeg" alt="Project Image" />
+        <h2>Cui-cui Project</h2>
+        <p>Classifier of bird species by sound</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://dvic.devinci.fr/projects/food-computer" target="_blank">
+        <img src="./assets/foodcomputerlogo.jpg" alt="Project Image" />
+        <h2>Food Computer</h2>
+        <p>Controlled Environments Agriculture</p>
+        </a>
+      </div>
+    </div>
+    <div class="project-row">
+      <div class="project-card">
+        <a href="https://dvic.devinci.fr/quickstarter/the-leather-page" target="_blank">
+        <img src="./assets/TLPlogo.jpeg" alt="Project Image" />
+        <h2>The Leather Page</h2>
+        <p>QuickStarter project</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://dvic.devinci.fr/projects/gosai" target="_blank">
+        <img src="./assets/gosaiLOGO.png" alt="Project Image" />
+        <h2>GOSAI</h2>
+        <p>General-purpose Operating System for Augmented Interfaces</p>
+        </a>
+      </div>
+    </div>
+    <div class="project-row">
+      <div class="project-card">
+        <a href="https://github.com/Arcadia24/calculator" target="_blank">
+        <img src="./assets/MNIST.png" alt="Project Image" />
+        <h2>Calculator</h2>
+        <p>Hand-Written Calculator using Deep Learing on Expand-MNIST</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/Arcadia24/TTS-with-emotion-conversion" target="_blank">
+        <img src="./assets/gosaiLOGO.png" alt="Project Image" />
+        <h2>StageWhisper</h2>
+        <p>Application on GOSAI Interface to show the use of audio interaction</p>
+        </a>
+      </div>
+    </div>
+  </section>
   <section class="skills" id="skills" :class="{ 'show-animate': activeSection === 'skills' }" ref="sections">
     <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
 
@@ -220,83 +265,6 @@
 
   </section>
 
-  <section class="projects" id="projects" :class="{ 'show-animate': activeSection === 'projects' }" ref="sections">
-    <h2 class="heading">My <span>Projects</span></h2>
-    <div class="project-row">
-      <div class="project-card">
-        <a href="https://dvic.devinci.fr/projects/cui-cui" target="_blank">
-        <img src="./assets/cuicuilogo.jpeg" alt="Project Image" />
-        <h2>Cui-cui Project</h2>
-        <p>Classifier of bird species by sound</p>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://dvic.devinci.fr/projects/food-computer" target="_blank">
-        <img src="./assets/foodcomputerlogo.jpg" alt="Project Image" />
-        <h2>Food Computer</h2>
-        <p>Controlled Environments Agriculture</p>
-        </a>
-      </div>
-    </div>
-    <div class="project-row">
-      <div class="project-card">
-        <a href="https://dvic.devinci.fr/quickstarter/the-leather-page" target="_blank">
-        <img src="./assets/TLPlogo.jpeg" alt="Project Image" />
-        <h2>The Leather Page</h2>
-        <p>QuickStarter project</p>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://dvic.devinci.fr/projects/gosai" target="_blank">
-        <img src="./assets/gosaiLOGO.png" alt="Project Image" />
-        <h2>GOSAI</h2>
-        <p>General-purpose Operating System for Augmented Interfaces</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="contact" id="contact" :class="{ 'show-animate': activeSection === 'contact' }" ref="sections" >
-    <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-    <form action="#">
-      <div class="input-box">
-        <div class="input-field">
-          <input type="text" placeholder="Full Name" required>
-          <span class="focus"></span>
-        </div>
-        <div class="input-field">
-          <input type="text" placeholder="Email Address" required>
-          <span class="focus"></span>
-        </div>
-        <span class="animate scroll" style="--i:3;"></span>
-      </div>
-
-      <div class="input-box">
-        <div class="input-field">
-          <input type="number" placeholder="Mobile Number" required>
-          <span class="focus"></span>
-        </div>
-        <div class="input-field">
-          <input type="text" placeholder="Email Subject" required>
-          <span class="focus"></span>
-        </div>
-        <span class="animate scroll" style="--i:5;"></span>
-      </div>
-
-      <div class="textarea-field">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <span class="focus"></span>
-        <span class="animate scroll" style="--i:7;"></span>
-      </div>
-
-      <div class="btn-box btns">
-        <button type="submit" class="btn">Send Message</button>
-        <span class="animate scroll" style="--i:9;"></span>
-      </div>
-    </form>
-  </section> -->
-
   <footer class="footer">
     <div class="foote-text">
       <p>Copyright &copy; 2023 by Nathan Vidal | All Rights Reserved.</p>
@@ -320,9 +288,8 @@ export default {
         { id: 'home', title: 'home' },
         { id: 'about', title: 'about' },
         { id: 'education', title: 'education' },
-        { id: 'skills', title: 'skills' },
         { id: 'projects', title: 'projects' },
-        { id: 'contact', title: 'contact' },
+        { id: 'skills', title: 'skills' },
         // Add more sections as needed
       ],
       activeSection: null,
@@ -406,6 +373,9 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+a:visited {
+  color: var(--text-color); /* Replace with your desired color */
 }
 
 .header {
@@ -803,7 +773,6 @@ span{
 .skills {
   min-height: auto;
   padding-bottom: 7rem;
-  background: var(--second-bg-color);
 }
 
 .skills h2 {
@@ -944,8 +913,8 @@ span{
 }
 
 .project-card img {
-  max-width: 50%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   margin-bottom: 15px; /* Slightly increased margin for image */
 }
 
@@ -1092,7 +1061,7 @@ span{
 }
 
 /* ANIMATION RELOAD AND SCROLL */
-.animate {
+/*.animate {
   position: absolute;
   top: 0;
   right: 0;
@@ -1132,10 +1101,10 @@ span{
 .projects.show-animate .animate.scroll{
   animation-delay: calc(.1s * var(--i));
   width: 0;
-}
+}*/
 
-section:nth-child(even) .animate.scroll,
-.footer .animate.scroll {
+section:nth-child(even) /*.animate.scroll,
+.footer .animate.scroll*/ {
   background: var(--second-bg-color);
 }
 
