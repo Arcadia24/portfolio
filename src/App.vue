@@ -31,9 +31,10 @@
         <h3>Creative Technololist Student</h3>
         <span class="animate" style="--i:3;"></span>
       </div>
-      <p>I find myself at the exciting intersection of art, technology, and innovation. My journey is a testament to the ever-evolving landscape of creativity in the digital age. 
-        Armed with a deep understanding of machine learning algorithms and a creative flair, 
-        I'm poised to redefine the boundaries of what's possible.
+      <p>I'm currently diving into the world of creative technology. 
+        I'm captivated by the potential of artificial intelligence, the nature, and the stunning world of art. 
+        My days are filled with experimenting and finding new ways to combine these diverse elements. It's all about seeing how AI can enhance the beauty of nature and the creativity of art. 
+        I'm on a quest to discover the intersections where technology meets the organic and where digital innovation can amplify artistic creativity.
       <span class="animate" style="--i:4;"></span>
       </p>
       <div class="btn-box">
@@ -65,9 +66,10 @@
 
     <div class="about-content">
       <h3>Creative Technololist Student<span class="animate scroll" style="--i:2;"></span></h3>
-      <p>I find myself at the exciting intersection of art, technology, and innovation. My journey is a testament to the ever-evolving landscape of creativity in the digital age. 
-        Armed with a deep understanding of machine learning algorithms and a creative flair, 
-        I'm poised to redefine the boundaries of what's possible.
+      <p>
+        I'm a student of creative technology, deeply fascinated by artificial intelligence, 
+        the wonders of nature, and the beauty of art. My work revolves around blending these elements together. 
+        I'm all about figuring out how AI can help us get closer to nature and art.
         <span class="animate scroll" style="--i:2;"></span>
       </p>
     </div>
@@ -90,7 +92,8 @@
             <div class="content">
               <div class="year"><i class="bx bxs-calendar"></i> 2022 - 2024</div>
               <h3>MS Creative Technology at Institute for Future Techonologies</h3>
-              <p>I pursued a Master of Science in Creative Technology at the De Vinci Innovation Center, focusing on the intersection of technology, innovation, and design.</p>
+              <p>I pursued a Master of Science in Creative Technology at the De Vinci Innovation Center, 
+                focusing on the intersection of technology, innovation, and design.</p>
             </div>
           </div>
 
@@ -154,7 +157,7 @@
     <div class="project-row">
       <div class="project-card">
         <a href="https://dvic.devinci.fr/projects/cui-cui" target="_blank">
-        <img src="./assets/cuicuilogo.jpeg" alt="Project Image" />
+        <img src="./assets/cuicui.png" alt="Project Image" />
         <h2>Cui-cui Project</h2>
         <p>Classifier of bird species by sound</p>
         </a>
@@ -170,7 +173,7 @@
     <div class="project-row">
       <div class="project-card">
         <a href="https://dvic.devinci.fr/quickstarter/the-leather-page" target="_blank">
-        <img src="./assets/TLPlogo.jpeg" alt="Project Image" />
+        <img src="./assets/TLP.png" alt="Project Image" />
         <h2>The Leather Page</h2>
         <p>QuickStarter project</p>
         </a>
@@ -193,7 +196,7 @@
       </div>
       <div class="project-card">
         <a href="https://github.com/Arcadia24/TTS-with-emotion-conversion" target="_blank">
-        <img src="./assets/gosaiLOGO.png" alt="Project Image" />
+        <img src="./assets/theatre2.png" alt="Project Image" />
         <h2>StageWhisper</h2>
         <p>Application on GOSAI Interface to show the use of audio interaction</p>
         </a>
@@ -215,12 +218,12 @@
             </div>
 
             <div class="progress">
-              <h3>C# <span>80%</span></h3>
+              <h3>HTML/CSS/JS <span>80%</span></h3>
               <div class="bar"><span></span></div>
             </div>
 
             <div class="progress">
-              <h3>HTML/CSS/JS <span>65%</span></h3>
+              <h3>C# <span>65%</span></h3>
               <div class="bar"><span></span></div>
             </div>
 
