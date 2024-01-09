@@ -515,7 +515,7 @@ export default {
 
             void main() {
                 float noise = 5.0 * pnoise(position + u_time, vec3(10.0));
-                float displacement = (u_frequency / 20.0) * (noise / 30.0);
+                float displacement = (u_frequency  / 5.0) * (noise / 20.0);
                 vec3 newPosition = position + normal * displacement;
                 gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
             }
@@ -545,6 +545,7 @@ export default {
           const audioContext = listener.context; // Use the listener's audio context
           const mediaStreamSource = audioContext.createMediaStreamSource(stream);
           sound.setNodeSource(mediaStreamSource);
+          sound.setVolume(0.01)
       };
 
       navigator.mediaDevices
