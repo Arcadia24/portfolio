@@ -37,11 +37,19 @@
         I'm on a quest to discover the intersections where technology meets the organic and where digital innovation can amplify artistic creativity.
       <span class="animate" style="--i:4;"></span>
       </p>
-      <div class="btn-box">
-        <!-- <a href="#" class="btn">Hire Me</a>
+      <p>
+
+        I have designed a minor interaction for you. 
+        
+        Click on the sphere and speak.
+        
+        If you have allowed the access to your microphone, the sphere will move in response to your voice.
+      </p>
+      <!-- <div class="btn-box">
+        <a href="#" class="btn">Hire Me</a>
         <a href="#contact" class="btn">Let's Talk</a>
-        <span class="animate" style="--i:5;"></span> -->
-      </div>
+        <span class="animate" style="--i:5;"></span>
+      </div> -->
     </div>
 
     <div class="home-sci">
@@ -514,8 +522,8 @@ export default {
             }
 
             void main() {
-                float noise = 5.0 * pnoise(position + u_time, vec3(10.0));
-                float displacement = (u_frequency  / 5.0) * (noise / 20.0);
+                float noise = 10.0 * pnoise(position + u_time, vec3(10.0));
+                float displacement = (u_frequency  / 5.0) *  (noise / 35.0) + (noise / 17.0);
                 vec3 newPosition = position + normal * displacement;
                 gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
             }
